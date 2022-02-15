@@ -40,7 +40,7 @@ public class Gate16 extends Gates {
     public static int Or16Way(int in[]) {
 
         for (int i = 1; i < 16; i = i + 2) {
-            if (Gates.Or(in[i], in[i - 1]) == 1) {
+            if (Or(in[i], in[i - 1]) == 1) {
                 return 1;
             }
         }
